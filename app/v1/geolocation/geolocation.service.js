@@ -8,7 +8,7 @@ module.exports = {
 		return axios({
 			method: 'post',
 			url: geolocationAPIUrl,
-			params: { process.env.api_key },
+			params: { key: process.env.api_key },
 			data: { considerIP: false }
 		}).then(geocode => {
 			console.log(geocode.data)

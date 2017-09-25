@@ -12,6 +12,12 @@ The code is separated into different parts to isolate components of the project 
 2. app - contains each API feature of the app. each feature is separated into versions (e.g. v1, v2, etc.). The feature folder is divided into 3 parts; the index.js file which is used for exporting, the controller file which is used for routing, and the service file which is used for 3rd party API calls and database queries using sequelize.
 3. sample - contains code for a sample feature api template
 
+## How to use the server (user):
+1. Install node.js and npm
+2. Clone this repository
+3. Open this repository in your terminal
+4. Run npm install
+5. Run npm start to start the server
 
 ## Packages List:
 1. nodemon
