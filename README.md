@@ -10,6 +10,7 @@ The code is separated into different parts to isolate components of the project 
 ### Parts:
 1. server.js - compiles all api routes into one file via js imports
 2. app - contains each API feature of the app. each feature is separated into versions (e.g. v1, v2, etc.). The feature folder is divided into 3 parts; the index.js file which is used for exporting, the controller file which is used for routing, and the service file which is used for 3rd party API calls and database queries using sequelize.
+3. sample - contains code for a sample feature api template
 
 
 ## Packages List:
