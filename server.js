@@ -18,6 +18,7 @@ var tunnel = localtunnel(port, {subdomain: 'levylocal'}, (err, tunnel) => {
 
 //ROUTES AND ROUTES IMPORT
 app.use('/sample', sample)
+app.use('/v1/geolocate', geolocation)
 
 //MISC
 app.listen(port);
