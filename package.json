@@ -10,6 +10,7 @@
     "express": "^4.15.3",
     "fast-csv": "^2.4.1",
     "geocluster": "^0.1.1",
+    "json2csv": "^3.11.5",
     "localtunnel": "^1.8.3",
     "node-csv": "^0.1.2",
     "nodemon": "^1.11.0",

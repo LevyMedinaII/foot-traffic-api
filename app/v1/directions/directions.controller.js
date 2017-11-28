@@ -12,8 +12,15 @@ router.post('/direction', (req, res) => {
         })
 })
 router.get('/getDangerAreas', (req, res) => {
-  res.send(service.get_all_danger_areas())
-
+  var csv = require('node-csv').createParser()
+  csv.parseFile('./app/v1/directions/danger_areas.csv', function(err, data){
+    console.log(data)
+    jsonDataArray = []
+    for(var i = 0; i < data.length; i++){
+      jsonDataArray.push({ lat: data[i][0], long: data[i][1] })
+    }
+    res.send(jsonDataArray)
+  })
 })
 
 router.post('/add_danger_area', (req, res)=>{
