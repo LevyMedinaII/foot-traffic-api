@@ -9,7 +9,7 @@ module.exports = {
 			method: 'post',
 			url: geolocationAPIUrl,
 			params: { key: process.env.api_key },
-			data: { considerIP: false }
+			data: { considerIP: false },
 		}).then(geocode => {
 			console.log(geocode.data)
 			userPosition = {
